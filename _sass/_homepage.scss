@@ -1,0 +1,100 @@
+.jumbotron {
+  height: 630px;
+  width: 100%;
+  background: url("../img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    margin: 0;
+    color: $white;
+    font-family: proxima;
+    -moz-text-shadow: 0 0 5px rgba(0,0,0,0.13);
+    -webkit-text-shadow: 0 0 5px rgba(0,0,0,0.13);
+    text-shadow: 0 0 5px rgba(0,0,0,0.13);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 170px;
+  }
+
+  .tlacitko {
+    margin: 0 auto;
+    text-align: center;
+    width: 105px;
+    display: block;
+    margin-top: 45px;
+  }
+}
+
+.highlights {
+  padding-bottom: 60px;
+
+  h2 {
+    margin: 0;
+    font-family: medium;
+    font-size: 33px;
+    text-align: center;
+    padding: 55px 0;
+
+    .modra {
+      font-family: medium;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      text-align: center;
+      width: 270px;
+      margin: 0 5px;
+      vertical-align: top;
+
+      p {
+        width: calc(100%);
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      h3 {
+        width: calc(100% - 10px);
+        margin: 0 auto;
+        font-family: bold;
+        margin-bottom: 15px;
+        font-size: 22px;
+      }
+
+      img {
+        max-width: 66px;
+        max-height: 61px;
+      }
+
+      .bus {
+        margin-top: 22px;
+      }
+
+      .peniz {
+        margin-top: 30px;
+      }
+
+      .strom {
+        margin-top: 22px;
+      }
+    }
+  }
+
+  .tlacitko {
+    background: $modra;
+    margin: 0 auto;
+    text-align: center;
+    width: 105px;
+    display: block;
+    margin-top: 55px;
+  }
+}

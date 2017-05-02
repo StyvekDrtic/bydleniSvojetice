@@ -1,0 +1,96 @@
+.horniHeader {
+  height: 90px;
+  background: url("/assets/img/pozadiHeader.jpg");
+  background-repeat: repeat;
+  background-size: 90%;
+  background-position: center;
+  z-index: 10;
+  position: relative;
+
+  .logo {
+    height: 25px;
+    margin-top: calc((90px - 25px)/2);
+    margin-left: 50px;
+  }
+
+  .rychlyKontakty {
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    margin-top: calc((90px - 55px)/2);
+
+    div {
+      display: inline-block;
+      vertical-align: middle;
+
+      span {
+        display: block;
+        font-size: 13px;
+        color: $white;
+        font-family: light;
+        text-align: right;
+        margin-bottom: 4px;
+      }
+
+      a {
+        display: block;
+        font-size: 17px;
+        color: $white;
+        font-family: medium;
+        text-decoration: none;
+      }
+    }
+
+    .rozdelovak {
+      height: 55px;
+      background: rgba($white, 0.5);
+      width: 1px;
+      border-radius: 100px;
+      margin: 0 13.5px;
+    }
+  }
+}
+
+.dolniHeader {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow:         0 0 20px 0 rgba(0,0,0,0.20);
+  -moz-box-shadow:    0 0 20px 0 rgba(0,0,0,0.20);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.20);
+  z-index: 9;
+  position: relative;
+  height: 80px;
+
+  nav {
+    height: 100%;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    margin-left: 25px;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      height: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      padding: 0 25px;
+
+      a {
+        text-decoration: none;
+        color: $tmava;
+        font-size: 17px;
+        line-height: 80px;
+        font-family: medium;
+      }
+    }
+
+    .active {
+      border-bottom: 4px solid $cervena;
+    }
+  }
+}
