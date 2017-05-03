@@ -7,7 +7,6 @@
   background-size: cover;
 
   h1 {
-    margin: 0;
     color: $white;
     font-family: proxima;
     -moz-text-shadow: 0 0 5px rgba(0,0,0,0.13);
@@ -16,6 +15,27 @@
     font-size: 60px;
     text-align: center;
     padding-top: 170px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+
+    @media screen and (max-width: 650px) {
+      font-size: 45px;
+      padding-top: 110px;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 40px;
+      padding-top: 100px;
+    }
+
+    @media screen and (max-width: 410px) {
+      font-size: 35px;
+    }
+
+    @media screen and (max-width: 330px) {
+      font-size: 30px;
+      padding-top: 60px;
+    }
   }
 
   .tlacitko {
@@ -24,21 +44,43 @@
     width: 105px;
     display: block;
     margin-top: 45px;
+
+    @media screen and (max-width: 410px) {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    height: 420px;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 390px;
+  }
+
+  @media screen and (max-width: 330px) {
+    height: 280px;
   }
 }
 
 .highlights {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 
   h2 {
-    margin: 0;
     font-family: medium;
-    font-size: 33px;
+    font-size: 30px;
     text-align: center;
-    padding: 55px 0;
+    padding: 50px 0;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
 
     .modra {
       font-family: medium;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 30px 0;
+      line-height: 40px;
     }
   }
 
@@ -52,13 +94,13 @@
       display: inline-block;
       text-align: center;
       width: 260px;
-      margin: 0 10px;
+      margin: 0 20px;
       vertical-align: top;
 
       p {
         width: calc(100%);
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 25px;
       }
 
@@ -67,7 +109,7 @@
         margin: 0 auto;
         font-family: bold;
         margin-bottom: 15px;
-        font-size: 22px;
+        font-size: 20px;
       }
 
       img {
@@ -86,6 +128,24 @@
       .strom {
         margin-top: 22px;
       }
+
+      @media screen and (max-width: 909px) {
+        margin-bottom: 50px;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+
+      @media screen and (max-width: 340px) {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
     }
   }
 
@@ -95,6 +155,6 @@
     text-align: center;
     width: 105px;
     display: block;
-    margin-top: 55px;
+    margin-top: 40px;
   }
 }
