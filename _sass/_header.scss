@@ -163,6 +163,14 @@
         font-size: 17px;
         line-height: 80px;
         font-family: medium;
+        -ms-transition:.2s;
+        -moz-transition:.2s;
+        -webkit-transition:.2s;
+        transition:.2s;
+
+        &:hover {
+          color: $cervena;
+        }
 
         @media screen and (max-width: 850px) {
           line-height: 51px;

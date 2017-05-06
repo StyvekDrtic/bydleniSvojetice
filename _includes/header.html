@@ -1,6 +1,6 @@
 <header>
   <div class="horniHeader">
-    <a href="{{ site.baseurl }}">
+    <a href="/">
       <img class="logo" src="assets/img/logo.png" alt="logo">
     </a>
     <div class="rychlyKontakty">
@@ -15,28 +15,28 @@
       </div>
     </div>
     <div class="rychlyKontakty2">
-      <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+      <a href="tel:+420608214424"><i class="fa fa-phone" aria-hidden="true"></i></a>
       <div class="rozdelovak"></div>
-      <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      <a href="simekostav@simekostav.cz"><i class="fa fa-envelope" aria-hidden="true"></i></a>
     </div>
   </div>
   <div class="dolniHeader">
     <nav>
       <ul>
-        <li class="active">
-          <a href="#">Domů</a>
+        <li {% if page.url == '/' %} class="active" {% endif %}>
+          <a href="/">Domů</a>
         </li>
-        <li>
-          <a href="#">Byty</a>
+        <li {% if page.url == '/byty.html' %} class="active"{% endif %}>
+          <a href="/byty">Byty</a>
         </li>
-        <li>
-          <a href="#">Fotogalerie</a>
+        <li {% if page.url == '/fotogalerie.html' %} class="active"{% endif %}>
+          <a href="/fotogalerie">Fotogalerie</a>
         </li>
-        <li>
-          <a href="#">Ceny</a>
+        <li {% if page.url == '/ceny.html' %} class="active"{% endif %}>
+          <a href="/ceny">Ceny</a>
         </li>
-        <li>
-          <a href="#">Kontakt</a>
+        <li {% if page.url == '/kontakt.html' %} class="active"{% endif %}>
+          <a href="/kontakt">Kontakt</a>
         </li>
       </ul>
     </nav>
