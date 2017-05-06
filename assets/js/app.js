@@ -74,3 +74,6 @@ $('a[href*="#"]')
       }
     }
   });
+
+$(".dolniHeader").animate({ scrollLeft: "100px" }, 800, "swing");
+$(".dolniHeader").animate({ scrollLeft: "0px" }, 800, "swing");
