@@ -1,0 +1,327 @@
+.ceny {
+  background: #F8F8F8;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  table {
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow:         0 0 20px 0 rgba(0,0,0,0.20);
+    -moz-box-shadow:    0 0 20px 0 rgba(0,0,0,0.20);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.20);
+    width: calc(100% - 50px);
+    font-family: book;
+    font-weight: normal;
+    background: rgba(122, 56, 32, 0);
+    border-radius: 20px !important;
+
+    thead {
+      background: #eee;
+      *border-collapse: collapse;
+      border-spacing: 0;
+
+      th {
+        padding: 5px 10px;
+        color: $tmava;
+        border-top: 0;
+        border-bottom: 0;
+        text-align: center;
+        font-family: bold;
+        font-size: 16px;
+
+        &:first-child {
+          border-left: 0;
+          border-top-left-radius: 20px !important;
+          width: 40px;
+
+          @media screen and (max-width: 870px) {
+            border-radius: 0;
+          }
+        }
+
+        &:last-child {
+          border-right: 0;
+          border-top-right-radius: 20px !important;
+
+          @media screen and (max-width: 870px) {
+            border-radius: 0;
+          }
+        }
+      }
+
+      #stav {
+        width: 100px;
+      }
+
+      #zahrada {
+        max-width: 120px;
+      }
+
+      #dum {
+        min-width: 50px;
+      }
+
+      @media screen and (max-width: 870px) {
+        display: none;
+      }
+    }
+
+    tbody {
+      tr {
+        height: 50px;
+        color: $tmava;
+
+        th {
+          text-align: center;
+          font-family: medium;
+
+          @media screen and (max-width: 870px) {
+            display: block;
+            background: $tmava;
+            color: #fff;
+            padding: 10px 0;
+          }
+        }
+
+        td {
+          text-align: center;
+          font-size: 14px;
+
+          @media screen and (max-width: 870px) {
+            display: block;
+            padding: 5px 0;
+            position: relative;
+            padding-left: 50%;
+            text-align: center;
+            border: 1px solid #d2d2d2;
+            border-top: 0;
+
+            &:nth-child(even) {
+              background: #eee;
+            }
+
+            &:nth-of-type(1):before {
+                content: "počet místností";
+            }
+
+            &:nth-of-type(2):before {
+                content: "plocha celkem(m2)";
+            }
+
+            &:nth-of-type(3):before {
+                content: "1NP(m2)";
+            }
+
+            &:nth-of-type(4):before {
+                content: "2NP(m2)";
+            }
+
+            &:nth-of-type(5):before {
+                content: "terasa(m2)";
+            }
+
+            &:nth-of-type(6):before {
+                content: "samostatná zahrada(m2)";
+            }
+
+            &:nth-of-type(7):before {
+                content: "parkovací stání";
+            }
+
+            &:nth-of-type(8):before {
+                content: "cena mil.";
+            }
+
+            &:nth-of-type(9):before {
+                content: "stav";
+            }
+
+            &:before {
+              content: "ahoj";
+              position: absolute;
+              top: 6px;
+              left: 6px;
+              width: 45%;
+              padding-right: 10px;
+              white-space: nowrap;
+              font-family: medium;
+            }
+          }
+        }
+
+        &:last-child {
+          td {
+            &:last-child {
+              border-bottom-right-radius: 20px;
+
+              @media screen and (max-width: 870px) {
+                border-radius: 0 !important;
+              }
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          background: #eee;
+
+          &:nth-child(even) {
+            background: #fff;
+          }
+        }
+
+        @media screen and (max-width: 870px) {
+          border-top: 30px solid #F8F8F8;
+          width: calc(100% - 30px);
+
+          &:first-child {
+            border-top: 0;
+            margin-top: 0;
+          }
+        }
+      }
+
+      #posledni {
+        border-bottom-left-radius: 20px !important;
+
+        @media screen and (max-width: 870px) {
+          border-radius: 0 !important;
+        }
+      }
+    }
+
+    @media screen and (max-width: 870px) {
+      box-shadow:         0 0 20px 0 rgba(0,0,0,0);
+      -moz-box-shadow:    0 0 20px 0 rgba(0,0,0,0);
+      -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0);
+    }
+
+    @media screen and (max-width: 870px) {
+      border-radius: 0;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.financovani {
+  padding-bottom: 45px;
+
+  .financovaniInner {
+    max-width: 900px;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+  }
+
+  .leva {
+    width: 50%;
+    display: inline-block;
+
+    h2 {
+      font-size: 32px;
+      font-family: medium;
+      margin-top: 0;
+      padding-top: 50px;
+      margin-bottom: 27px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .prava {
+    float: right;
+    vertical-align: top;
+    margin-top: 120px;
+    display: inline-block;
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 100%;
+      height: 80px;
+      box-shadow:         0 0 20px 0 rgba(0,0,0,0.20);
+      -moz-box-shadow:    0 0 20px 0 rgba(0,0,0,0.20);
+      -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.20);
+
+      @media screen and (max-width: 370px) {
+        height: 55px;
+      }
+    }
+
+    ul {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0;
+      margin: 0;
+      padding-top: 5px;
+      padding-left: 18px;
+
+      li {
+        margin: 5px 0;
+        list-style: none;
+
+        div {
+          display: inline-block;
+          width: 20px;
+          margin-left: -2px;
+          margin-right: 3px;
+
+          i {
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+          }
+        }
+
+        a {
+          font-size: 15px;
+          font-family: medium;
+          text-decoration: none;
+
+          @media screen and (max-width: 370px) {
+            font-size: 13px;
+          }
+        }
+
+        &:nth-child(1) {
+          i {
+            color: $modra;
+          }
+        }
+
+        &:nth-child(2) {
+          i {
+            color: $cervena;
+          }
+        }
+
+        &:nth-child(3) {
+          i {
+            color: $zelena;
+          }
+        }
+      }
+
+      @media screen and (max-width: 370px) {
+        padding-left: 10px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      float: none;
+      margin-top: 30px;
+    }
+  }
+}
