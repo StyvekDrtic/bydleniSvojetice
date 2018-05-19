@@ -1,9 +1,12 @@
 .horniHeader {
   height: 90px;
-  background: url("../img/pozadiHeader.jpg");
-  background-repeat: repeat;
-  background-size: 90%;
-  background-position: center;
+  background: -moz-linear-gradient(65deg, rgba(114,169,247,1) 0%, rgba(70,132,240,1) 100%, rgba(70,132,240,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(114,169,247,1)), color-stop(100%, rgba(70,132,240,1)), color-stop(100%, rgba(70,132,240,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(65deg, rgba(114,169,247,1) 0%, rgba(70,132,240,1) 100%, rgba(70,132,240,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(65deg, rgba(114,169,247,1) 0%, rgba(70,132,240,1) 100%, rgba(70,132,240,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(65deg, rgba(114,169,247,1) 0%, rgba(70,132,240,1) 100%, rgba(70,132,240,1) 100%); /* ie10+ */
+  background: linear-gradient(25deg, rgba(114,169,247,1) 0%, rgba(70,132,240,1) 100%, rgba(70,132,240,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4684F0', endColorstr='#72A9F7',GradientType=0 ); /* ie6-9 */
   z-index: 10;
   position: relative;
 

@@ -126,6 +126,14 @@
 #popis {
   padding-bottom: 40px;
 
+  ul {
+    li {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+  }
+
   @media screen and (max-width: 400px) {
     padding-bottom: 10px;
   }
@@ -155,7 +163,7 @@
 
   .pudorysy {
     width: calc(100% - 100px);
-    max-width: 950px;
+    max-width: 900px;
     margin: 0 auto;
 
     ul {
