@@ -1,3 +1,37 @@
+#dphBaner {
+  font-family: book;
+  font-size: 18px;
+  max-width: 1100px;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 30px;
+  text-align: right;
+
+  @media screen and (max-width: 870px) {
+    width: calc(100% - 50px);
+  }
+}
+
+.parkovani {
+  padding-top: 30px;
+  font-family: book;
+  font-size: 15px;
+  max-width: 1100px;
+  width: calc(100% - 80px);
+  margin: 0 auto;
+  display: block;
+  text-align: left;
+
+  &:last-child {
+    padding-top: 10px;
+  }
+
+  @media screen and (max-width: 870px) {
+    width: calc(100% - 50px);
+  }
+}
+
 .ceny {
   background: #F8F8F8;
   padding-top: 60px;
@@ -13,7 +47,7 @@
     font-family: book;
     font-weight: normal;
     background: rgba(122, 56, 32, 0);
-    border-radius: 20px !important;
+    border-radius: 5px !important;
 
     thead {
       background: #eee;
@@ -21,17 +55,16 @@
       border-spacing: 0;
 
       th {
-        padding: 5px 10px;
+        padding: 15px 30px;
         color: $tmava;
         border-top: 0;
         border-bottom: 0;
         text-align: center;
-        font-family: bold;
-        font-size: 16px;
+        font-size: 18px;
 
         &:first-child {
           border-left: 0;
-          border-top-left-radius: 20px !important;
+          border-top-left-radius: 5px !important;
           width: 40px;
 
           @media screen and (max-width: 870px) {
@@ -41,7 +74,7 @@
 
         &:last-child {
           border-right: 0;
-          border-top-right-radius: 20px !important;
+          border-top-right-radius: 5px !important;
 
           @media screen and (max-width: 870px) {
             border-radius: 0;
@@ -50,15 +83,15 @@
       }
 
       #stav {
-        width: 100px;
+        max-width: 100px;
       }
 
-      #zahrada {
-        max-width: 120px;
+      #terasa {
+        max-width: 110px;
       }
 
       #dum {
-        min-width: 50px;
+
       }
 
       @media screen and (max-width: 870px) {
@@ -87,6 +120,18 @@
           text-align: center;
           font-size: 14px;
 
+          &:nth-of-type(3):after {
+              content: " m\00B2";
+          }
+
+          &:nth-of-type(4):after {
+              content: " m\00B2";
+          }
+
+          &:nth-of-type(5):after {
+              content: " mil.";
+          }
+
           @media screen and (max-width: 870px) {
             display: block;
             padding: 5px 0;
@@ -101,38 +146,26 @@
             }
 
             &:nth-of-type(1):before {
-                content: "počet místností";
+                content: "typ jednotky";
             }
 
             &:nth-of-type(2):before {
-                content: "plocha celkem(m2)";
+                content: "podlaží";
             }
 
             &:nth-of-type(3):before {
-                content: "1NP(m2)";
+                content: "celková plocha";
             }
 
             &:nth-of-type(4):before {
-                content: "2NP(m2)";
+                content: "terasa";
             }
 
             &:nth-of-type(5):before {
-                content: "terasa(m2)";
+                content: "cena";
             }
 
             &:nth-of-type(6):before {
-                content: "samostatná zahrada(m2)";
-            }
-
-            &:nth-of-type(7):before {
-                content: "parkovací stání";
-            }
-
-            &:nth-of-type(8):before {
-                content: "cena mil.";
-            }
-
-            &:nth-of-type(9):before {
                 content: "stav";
             }
 
@@ -152,7 +185,7 @@
         &:last-child {
           td {
             &:last-child {
-              border-bottom-right-radius: 20px;
+              border-bottom-right-radius: 5px;
 
               @media screen and (max-width: 870px) {
                 border-radius: 0 !important;
@@ -181,7 +214,7 @@
       }
 
       #posledni {
-        border-bottom-left-radius: 20px !important;
+        border-bottom-left-radius: 5px !important;
 
         @media screen and (max-width: 870px) {
           border-radius: 0 !important;

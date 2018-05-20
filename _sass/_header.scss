@@ -11,13 +11,13 @@
   position: relative;
 
   .logo {
-    height: 25px;
-    margin-top: calc((90px - 25px)/2);
+    height: 40px;
+    margin-top: calc((90px - 40px)/2);
     margin-left: 50px;
 
     @media screen and (max-width: 850px) {
-      margin-top: calc((60px - 20px)/2);
-      height: 20px;
+      margin-top: calc((70px - 35px)/2);
+      height: 35px;
     }
 
     @media screen and (max-width: 550px) {
@@ -26,8 +26,8 @@
 
     @media screen and (max-width: 350px) {
       margin-left: 15px;
-      margin-top: calc((60px - 18px)/2);
-      height: 18px;
+      margin-top: calc((70px - 30px)/2);
+      height: 30px;
     }
   }
 
@@ -75,7 +75,7 @@
   .rychlyKontakty2 {
     display: none;
     float: right;
-    margin-top: calc((60px - 40px)/2);
+    margin-top: calc((70px - 40px)/2);
     margin-right: 50px;
 
     .rozdelovak {
@@ -127,7 +127,7 @@
   }
 
   @media screen and (max-width: 850px) {
-    height: 60px;
+    height: 70px;
   }
 }
 
