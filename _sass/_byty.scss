@@ -67,6 +67,14 @@
           background-color: darken($zelena, 10);
         }
       }
+
+      &:nth-child(5) {
+        background: $tmava;
+
+        &:hover {
+          background-color: darken($tmava, 10);
+        }
+      }
     }
   }
 
