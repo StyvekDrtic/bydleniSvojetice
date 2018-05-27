@@ -182,6 +182,12 @@
           }
         }
 
+        .neMil {
+          &:after {
+              content: "" !important;
+          }
+        }
+
         &:last-child {
           td {
             &:last-child {
