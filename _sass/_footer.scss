@@ -65,7 +65,7 @@ footer {
 
 .navigace {
   .navigaceInner{
-    min-height: 270px;
+    min-height: 285px;
   }
 
   ul {
@@ -145,6 +145,13 @@ footer {
       }
     }
 
+    .detailyOFinancovani {
+      font-size: 10px;
+      display: block;
+      text-decoration: underline;
+      margin-top: 5px;
+    }
+
     .jelinekJmeno {
       color: #fff;
       border-bottom: 1px solid gray;
@@ -176,7 +183,7 @@ footer {
       }
 
       a {
-        font-size: 15px;
+        font-size: 13px;
       }
     }
   }
